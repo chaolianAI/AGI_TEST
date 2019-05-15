@@ -1,0 +1,52 @@
+<html>
+<script src="logic.js"></script>
+<style>
+body{
+   font-family: 'Microsoft YaHei';
+   font-size:17px;
+   background-color: #f1f1f1;
+}
+button {
+  font-size: 15px;
+  color:black;
+  text-align:left;
+  height: 35px;
+  border: none;
+  background-color: #cccccc;
+  cursor: pointer;
+  transition: all 300ms;
+  font-family: 'Microsoft YaHei';
+  font-weight:bold;
+  text-align:center;
+}
+button:hover {
+  background-color: black;
+  color:white;
+}
+</style>
+<script>
+function savePreCommands()
+{
+	var lines=document.getElementById('txt_input').value.split("\n");
+	for(let line of lines)
+	{
+		var command=createSentence(line);
+		end_commands.push(command);
+	}
+	localStorage["end_commands"]=JSON.stringify(end_commands);
+	alert("完毕，end_commands数组为"+localStorage["end_commands"]);
+}
+</script>
+<body>
+<script>
+if(localStorage["pre_commands"]!=undefined) self.location='cmd_learning.html';
+</script>
+<br>
+<b>返回值命令</b>
+<br>
+<div style="height:15px"></div>
+<textarea id="txt_input" style="width:400px; height:240px" placeholder="请输入在末尾处执行的命令：" ></textarea>
+<br>
+<button id="btn_ok" onclick="saveEndCommands()" style="width:80px">确认</button>
+</body>
+</html>

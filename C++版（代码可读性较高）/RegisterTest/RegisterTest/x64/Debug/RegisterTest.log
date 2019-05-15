@@ -1,0 +1,29 @@
+﻿生成启动时间为 2018/2/25 20:55:07。
+     1>项目“F:\VSProjects\RegisterTest\RegisterTest\RegisterTest.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"x64\Debug\RegisterTest.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\RegisterTest.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt RegisterTest.cpp
+         RegisterTest.cpp
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(17): warning C4244: “+=”: 从“double”转换到“unsigned char”，可能丢失数据
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(44): warning C4244: “+=”: 从“double”转换到“unsigned short”，可能丢失数据
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(187): warning C4244: “参数”: 从“unsigned short”转换到“unsigned char”，可能丢失数据
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(717): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+         f:\vsprojects\registertest\registertest\registertest.cpp(726): note: 参见对正在编译的函数 模板 实例化“void perm<IfThen*>(std::vector<std::vector<IfThen *,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> *,std::vector<_Ty,std::allocator<_Ty>> *)”的引用
+                 with
+                 [
+                     _Ty=IfThen *
+                 ]
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(292): warning C4715: “uni_negative”: 不是所有的控件路径都返回值
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(301): warning C4715: “uni_positive”: 不是所有的控件路径都返回值
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(331): warning C4715: “uni_add”: 不是所有的控件路径都返回值
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(182): warning C4715: “Object::getValue”: 不是所有的控件路径都返回值
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\VSProjects\RegisterTest\x64\Debug\RegisterTest.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"F:\VSProjects\RegisterTest\x64\Debug\RegisterTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\VSProjects\RegisterTest\x64\Debug\RegisterTest.lib" /MACHINE:X64 x64\Debug\RegisterTest.obj
+         x64\Debug\stdafx.obj
+         RegisterTest.vcxproj -> F:\VSProjects\RegisterTest\x64\Debug\RegisterTest.exe
+     1>已完成生成项目“F:\VSProjects\RegisterTest\RegisterTest\RegisterTest.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:04.61

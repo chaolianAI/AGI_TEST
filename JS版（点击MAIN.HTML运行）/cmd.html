@@ -1,0 +1,157 @@
+<html>
+<script src="logic.js"></script>
+<style>
+body{
+  line-height: 20px;
+  font-size:20px;
+  font-family: 'Microsoft YaHei';
+  background-color: #f1f1f1;
+}
+button {
+  font-size: 15px;
+  color:black;
+  text-align:left;
+  height: 35px;
+  border: none;
+  background-color: #cccccc;
+  cursor: pointer;
+  transition: all 300ms;
+  font-family: 'Microsoft YaHei';
+  font-weight:bold;
+}
+button:hover {
+  background-color: black;
+  color:white;
+}
+</style>
+<body>
+<script>
+var end=false;
+function txtAppend_verb(content)
+{document.getElementById("txt_input").value+=content;}
+function txtAppend_noun(content)
+{document.getElementById("txt_input").value+=("|"+content);}
+
+/*
+function print_screen(content)
+{
+	var original=document.getElementById("txt_output").innerHTML;
+	document.getElementById("txt_output").innerHTML+=content;
+}
+*/
+function println_screen(content)
+{
+	var original=document.getElementById("txt_output").innerHTML;
+	document.getElementById("txt_output").innerHTML+="<font size=3>"+content+"<br></font>";
+	//alert(document.getElementById("txt_output").innerHTML);
+}
+function showCounter()
+{
+	C.setValue(C.getValue()+1);
+	document.getElementById('txt_output').innerHTML+="<font color=green size=3>当前循环计数器C="+C.getValue()+"<br></font>";
+}
+function sendCmd()
+{
+	if(end==true)
+	{
+		sendCmd_end();
+		return ;
+	}
+	
+	var commandText=document.getElementById("txt_input").value;
+	
+	var original=document.getElementById("txt_output").innerHTML;
+	document.getElementById("txt_output").innerHTML+="<font size=3 color=blue>"+commandText+"<br></font>";
+	
+	var command=createSentence(commandText);
+	createConnections(command);//注意！先建立关联，后执行！
+	command.execute();
+	println_screen(allValues_toString());
+	println_screen("if:"+findIfThenByCommand(command).conditions.join("&&"));
+	
+	println_screen("");
+	document.getElementById("txt_input").value="";
+}
+function sendCmd_end()
+{
+	var commandText=document.getElementById("txt_input").value;
+	
+	var original=document.getElementById("txt_output").innerHTML;
+	document.getElementById("txt_output").innerHTML+="<font size=3 color=blue>"+commandText+"<br></font>";
+	
+	var command=createSentence(commandText);
+	command.execute();
+	end_commands.push(command);
+	
+	println_screen(allValues_toString());
+	
+	println_screen("");
+	document.getElementById("txt_input").value="";
+}
+function quitLoop()
+{
+	if(end_commands.length>0)
+	{
+		//执行返回值命令
+		for(let command of end_commands)
+		{
+			println_screen(command.toString());
+			command.execute();
+		}
+		println_screen(allValues_toString());
+	}
+	else
+	{
+		//让用户输入返回值命令
+		alert("请输入返回值命令！");
+		end=true;
+	}
+}
+function addMoreButtons()
+{
+	document.getElementById("moreButtons").innerHTML="<br>";
+	var div_moreButtons=document.getElementById("moreButtons");
+	for(var i=3;i<allObjs.length;i++)
+	{
+		div_moreButtons.innerHTML+="<button onclick=\"txtAppend_noun('"+allObjs[i].name+"')\">&nbsp;&nbsp;"+
+		    allObjs[i].name+"&nbsp;&nbsp;</button>&nbsp;&nbsp;";
+	}
+}
+function saveAll()
+{
+	setMiddleCommands(middle_commands);
+	setEndCommands(end_commands);
+	setIfThens(ifThens);
+	alert("已成功保存学习结果！");
+}
+</script>
+
+    <br><b><font color="#b7472a">命令提示符</font></b><br><br>
+    <div id="txt_output" style="width:900px;height:450px;border:1px solid #8a98b3;overflow-y:scroll"></div>
+    <div style="height:5px"></div>
+    <textarea id="txt_input" style="width:810px; height:45px" placeholder="输入命令：" ></textarea>
+    <button onclick="sendCmd()" style="width:80px;text-align:center;">发送</button>
+	<br>
+	<font size=3>快捷键盘<br><br></font>
+	<button onclick="txtAppend_verb('左移')">&nbsp;&nbsp;左移&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	<button onclick="txtAppend_verb('右移')">&nbsp;&nbsp;右移&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	<button onclick="txtAppend_verb('加1')">&nbsp;&nbsp;加1&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	<button onclick="txtAppend_verb('加')">&nbsp;&nbsp;加&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	<button onclick="txtAppend_verb('赋值')">&nbsp;&nbsp;赋值&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	<button onclick="txtAppend_noun('A')">&nbsp;&nbsp;A&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	<button onclick="txtAppend_noun('Q')">&nbsp;&nbsp;Q&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	<button onclick="txtAppend_noun('AQ')">&nbsp;&nbsp;AQ&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	<button onclick="showCounter()">&nbsp;&nbsp;进入下轮循环&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	<button onclick="quitLoop()">&nbsp;&nbsp;结束循环&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	<button onclick="saveAll()">&nbsp;&nbsp;保存&nbsp;&nbsp;</button>&nbsp;&nbsp;
+	<br>
+	<div id="moreButtons"></div>
+	<!--<button onclick="txtAppend_noun('X')">&nbsp;&nbsp;X&nbsp;&nbsp;</button>-->
+	<script>
+	addMoreButtons();
+	for (var i = 0; i < pre_commands.length; i++)
+		pre_commands[i].execute();
+	println_screen("初始："+allValues_toString());
+	</script>
+</body>
+</html>

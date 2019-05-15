@@ -1,0 +1,27 @@
+<html>
+<script src="logic.js"></script>
+<style>
+body{
+background-color:#F1F1F1;
+font-size:18;
+}
+</style>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+  <script>
+	document.write("<br><b>变量信息：</b><br>")
+	document.writeln(allValues_toString());document.write("<br><br>");
+	document.writeln("<b>初始化命令：</b><br>")
+	document.writeln(pre_commands.join("<br>"));
+	document.write("<br><br><b>中间命令：</b><br>")
+	document.writeln(middle_commands.join("<br>"));
+	document.writeln("<br><br><b>返回值命令：</b><br>")
+	document.writeln(end_commands.join("<br>"));
+	document.writeln("<br><br><b>因果关联：</b><br>");
+	document.writeln(ifThens.join("<br>"));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+<script src="logic.js"></script>
+<script src="jquery-1.12.4.js"></script>
+<style>
+body{
+   font-family: 'Microsoft YaHei';
+   font-size:17px;
+   background-color: #f1f1f1;
+}
+button {
+  font-size: 15px;
+  color:black;
+  text-align:left;
+  height: 35px;
+  border: none;
+  background-color: #cccccc;
+  cursor: pointer;
+  transition: all 300ms;
+  font-family: 'Microsoft YaHei';
+  font-weight:bold;
+}
+button:hover {
+  background-color: black;
+  color:white;
+}
+</style>
+<body>
+<script>
+if(localStorage["userArgs"]!=undefined&&JSON.parse(localStorage["userArgs"]).length>0)
+	self.location='inputArgs.html';
+
+function processAllInput()
+{
+	var argNames=document.getElementById("txt_argNames").value.split(",");
+	if(document.getElementById("txt_argNames").value=="") argNames=new Array();
+	
+	var tempNames=document.getElementById("txt_tempNames").value.split(",");
+	if(document.getElementById("txt_tempNames").value=="") tempNames=new Array();
+	
+	var answerNames=document.getElementById("txt_answerNames").value.split(",");
+	if(document.getElementById("txt_answerNames").value=="") answerNames=new Array();
+	
+	createNewArgs(argNames);
+	createNewTemps(tempNames);
+	createNewAnswers(answerNames);
+	
+	//持久化存储
+	setAllObjs(allObjs);
+	setUserArgs(userArgs);
+	setUserArgValues(userArgValues);
+	setUserTemps(userTemps);
+	setUserTempValues(userTempValues);
+	setAnswers(answers);
+	setAnswerValues(answerValues);
+	
+	self.location="inputArgs.html";
+}
+</script>
+    <br>
+	请输入各类变量名，以半角逗号分隔<br><br>
+	参数变量名　<input id="txt_argNames" style="width:500px;font-size:17px"></input><br><br>
+	临时变量名　<input id="txt_tempNames" style="width:500px;font-size:17px"></input><br><br>
+	答案变量名　<input id="txt_answerNames" style="width:500px;font-size:17px"></input><br><br>
+	
+	　　　　　　　　　　　<button onclick="processAllInput()">　确认　</button>　　　　　
+	<button onclick="self.location='inputArgs.html'">　跳过　</button>
+</body>
+</html>

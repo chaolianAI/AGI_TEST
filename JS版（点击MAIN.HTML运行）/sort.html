@@ -1,0 +1,46 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+	<script src="logic.js"></script>
+</head>
+<style>
+body{
+   font-family: 'Microsoft YaHei';
+   font-size:17px;
+   background-color: #f1f1f1;
+}
+button {
+  font-size: 15px;
+  color:black;
+  text-align:left;
+  height: 35px;
+  border: none;
+  background-color: #cccccc;
+  cursor: pointer;
+  transition: all 300ms;
+  font-family: 'Microsoft YaHei';
+  font-weight:bold;
+}
+button:hover {
+  background-color: black;
+  color:white;
+}
+</style>
+<body>
+<script>
+for(var i=0;i<ifThens.length;i++)
+{
+	document.write("下标"+i+"："+ifThens[i].toString()+"<br>");
+}
+document.write("<br>");
+function reOrder()
+{
+    var indexes=document.getElementById("txt_order").value.split(",");
+	reOrderIfThens(indexes);
+	self.location="viewMemory.html";
+}
+</script>
+<input id="txt_order" style='width:650px;height:30px;font-size:15px' placeholder="请在此输入新顺序，以半角逗号为分隔符"></input><br><br>
+<button onclick="reOrder()">确认</button>
+</body>

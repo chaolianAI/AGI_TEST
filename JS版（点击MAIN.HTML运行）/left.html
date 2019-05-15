@@ -1,0 +1,53 @@
+<html>
+
+<style>
+body{
+  line-height: 20px;
+  font-size:20px;
+  background-color:#b7472a;
+  font-family: 'Microsoft YaHei';
+}
+.main input[type='button'] {
+  font-size: 15px;
+  text-align:left;
+  color:white;
+  width: 100%;
+  height: 55px;
+  border: none;
+  background-color: #b7472a;
+  cursor: pointer;
+  transition: all 300ms;
+  font-family: 'Microsoft YaHei';
+}
+.main input[type='button']:hover {
+  background-color: #c75033;
+  color:white;
+}
+</style>
+<script>
+function jumpToInputNames(){
+window.parent.right.location.href="inputNames.html";
+}
+function jumpToCalculate(){
+window.parent.right.location.href="calc_inputArgs.html";
+}
+function jumpToManageMemory(){
+window.parent.right.location.href="manageMemory.html";
+}
+function jumpToCmd(){
+window.parent.right.location.href="cmd.html";
+}
+</script>
+<body>
+<br>
+<font color="white" face='Microsoft YaHei'><h3>&nbsp;&nbsp;&nbsp;让计算机学做二进制乘除法</h3></font>
+<br>
+<div class="main">
+<input type="button" value="    学习二进制乘法" onclick="jumpToInputNames()"><br>
+<input type="button" value="    学习二进制除法" onclick="jumpToInputNames()"><br>
+<input type="button" value="    检验学习效果" onclick="jumpToCalculate()"><br>
+<input type="button" value="    管理记忆" onclick="jumpToManageMemory()"> <br>
+<input type="button" value="    命令提示符" onclick="jumpToCmd()"> <br>
+</div>
+</body>
+</html>

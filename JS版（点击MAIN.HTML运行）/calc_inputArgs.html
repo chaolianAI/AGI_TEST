@@ -1,0 +1,62 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+	<script src="logic.js"></script>
+</head>
+<style>
+body{
+   font-family: 'Microsoft YaHei';
+   font-size:17px;
+   background-color: #f1f1f1;
+}
+button {
+  font-size: 15px;
+  color:black;
+  text-align:left;
+  height: 35px;
+  border: none;
+  background-color: #cccccc;
+  cursor: pointer;
+  transition: all 300ms;
+  font-family: 'Microsoft YaHei';
+  font-weight:bold;
+}
+button:hover {
+  background-color: black;
+  color:white;
+}
+</style>
+<body>
+<br>
+&nbsp;&nbsp;&nbsp请输入参数值（二进制）：<br>
+<font size=1px><br></font>
+<script>
+function IO_setArgValues()
+{
+	for(var i=0;i<userArgs.length;i++)
+	{
+		var input_value=document.getElementById("userArg"+i).value;
+		userArgValues[i]=binary2Short(input_value);
+	}
+	Q.maxLen=document.getElementById("lenQ").value;
+	A.maxLen=new Number(Q.maxLen)+1;//防止被系统当成字符串+'1'
+	setUserArgValues(userArgValues);
+	setAllObjs(allObjs);
+	self.location='calc.html';
+}
+
+for(var i=0;i<userArgs.length;i++)
+{
+    var arg=userArgs[i];
+	document.write("&nbsp;&nbsp;&nbsp"+arg.name+"&nbsp;&nbsp;<input style='width:240px' id='userArg"+i+"'>");
+	document.write("</input><br><br>");
+}
+</script>
+&nbsp;&nbsp;&nbspQ寄存器长度为：<input id='lenQ' style='width:125px'></input><br><br>
+
+　　　　　<button onclick="IO_setArgValues()">　　确认　　</button>　　　　　
+
+</body>
+</html>
+

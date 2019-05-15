@@ -1,0 +1,59 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+function IntRef(name,value)
+{
+    this.name=name;
+	this.value=value;
+}
+
+IntRef.prototype.toString=function(){return this.name+"=="+this.value;}
+
+function JSON2IntRef(json)
+{
+    return new IntRef(json["name"],json["value"]);
+}
+
+var obj=JSON2IntRef(JSON.parse(localStorage["str"]));
+
+document.write(obj+"\n");
+
+
+var testArray=new Array();
+testArray.push("ABCD");testArray.push("EFG");
+document.writeln(typeof(testArray)+"  "+testArray);
+//document.write(JSON.stringify(testArray));
+
+function f(arr)
+{
+	arr.push("NEW");
+}
+
+document.writeln("测试内容\n");
+
+var temp=new Array();
+temp.push("SOUTH");temp.push("NORTH");
+f(temp);
+
+//document.writeln( JSON.parse(JSON.stringify(temp))[1] );
+
+var anotherArray=Array.from(temp);
+anotherArray.push("EAST");
+document.writeln(temp+"←");
+
+/*
+var objFromLocalStorage=localStorage["refVar"];
+document.write(typeof(objFromLocalStorage));
+document.write(objFromLocalStorage+"\n");
+localStorage["arr"]+="marra";
+document.write( typeof(localStorage["arr"]) +"\n");
+document.write(localStorage["arr"]);
+*/
+</script>
+</body>
+</html>
+

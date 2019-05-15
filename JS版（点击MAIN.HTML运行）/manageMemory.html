@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<script src="logic.js"></script>
+<style>
+body{
+background-color:#F1F1F1;
+}
+</style>
+<head>
+<meta charset="utf-8">
+<title>viewTable</title>
+</head>
+
+<body leftmargin="20px">
+<script>
+function deleteOrNot()
+{
+	if(confirm("真的要删除记忆吗？")==true)
+	{
+		localStorage.clear();
+	}
+}
+function gotoSort()
+{
+    if(ifThens.length<2)
+	    alert("指令数量小于2，无法进行排序");
+	else
+	    self.location="sort.html";
+}
+</script>
+
+<table width="800" border="0" >
+  <tbody>
+    <tr>
+      <td width="400" height="200" align="center"><a href="viewMemory.html"><img src="viewMemory.png" width="300" height="150" alt=""/></a></td>
+      <td width="400" height="200" align="center"></td>
+    </tr>
+    <tr>
+      <td width="400" height="200" align="center">
+	    <img src="deleteMemory.png"  onclick="deleteOrNot()" width="300" height="150" alt=""/>
+	  </td>
+      <td width="400" height="200" align="center"></td>
+    </tr>
+    <tr>
+      <td width="400" height="200" align="center">
+	    <img src="sort.png"  onclick="gotoSort()" width="300" height="150" alt=""/>
+	  </td>
+      <td width="400"></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

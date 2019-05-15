@@ -1,0 +1,75 @@
+﻿生成启动时间为 2018/9/18 18:37:03。
+     1>项目“F:\VSProjects\RegisterTest\RegisterTest\RegisterTest.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Release\RegisterTest.pch" /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Release\RegisterTest.pch" /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt RegisterTest.cpp
+         RegisterTest.cpp
+     1>f:\vsprojects\registertest\registertest\strsplit.h(10): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\vsprojects\registertest\registertest\strsplit.h(38): warning C4018: “<=”: 有符号/无符号不匹配
+     1>f:\vsprojects\registertest\registertest\strsplit.h(49): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(17): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(19): warning C4244: “+=”: 从“double”转换到“unsigned char”，可能丢失数据
+     1>RegisterTest.cpp(44): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(46): warning C4244: “+=”: 从“double”转换到“unsigned short”，可能丢失数据
+     1>RegisterTest.cpp(72): warning C4018: “<=”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(192): warning C4244: “参数”: 从“unsigned short”转换到“unsigned char”，可能丢失数据
+     1>RegisterTest.cpp(443): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(456): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(465): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(489): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(500): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(512): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(514): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(530): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(569): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(571): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(626): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(641): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(648): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(654): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(666): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(675): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(684): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(705): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(783): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(789): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(802): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(811): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(819): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(822): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(825): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(909): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(931): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(977): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(990): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1002): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1017): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1020): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1048): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1049): warning C4018: “<=”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1063): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1065): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1075): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>RegisterTest.cpp(1086): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1100): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1112): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1119): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1213): warning C4018: “<”: 有符号/无符号不匹配
+     1>RegisterTest.cpp(1238): warning C4018: “<”: 有符号/无符号不匹配
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\VSProjects\RegisterTest\Release\RegisterTest.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"F:\VSProjects\RegisterTest\Release\RegisterTest.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\VSProjects\RegisterTest\Release\RegisterTest.lib" /MACHINE:X86 /SAFESEH Release\RegisterTest.obj
+         Release\stdafx.obj
+         正在生成代码
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(187): warning C4715: “Object::getValue”: 不是所有的控件路径都返回值
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(306): warning C4715: “uni_negative”: 不是所有的控件路径都返回值
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(315): warning C4715: “uni_positive”: 不是所有的控件路径都返回值
+     1>f:\vsprojects\registertest\registertest\registertest.cpp(345): warning C4715: “uni_add”: 不是所有的控件路径都返回值
+         All 1219 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+         已完成代码的生成
+         RegisterTest.vcxproj -> F:\VSProjects\RegisterTest\Release\RegisterTest.exe
+     1>已完成生成项目“F:\VSProjects\RegisterTest\RegisterTest\RegisterTest.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:05.84
