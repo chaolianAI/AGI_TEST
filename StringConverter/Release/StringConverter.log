@@ -1,0 +1,41 @@
+﻿生成启动时间为 2019/4/25 21:41:13。
+     1>项目“H:\StringConverter\StringConverter\StringConverter.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Release\StringConverter.pch" /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Release\StringConverter.pch" /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt StringConverter.cpp
+         StringConverter.cpp
+     1>h:\stringconverter\stringconverter\strsplit.h(10): warning C4018: “<”: 有符号/无符号不匹配
+     1>h:\stringconverter\stringconverter\strsplit.h(38): warning C4018: “<=”: 有符号/无符号不匹配
+     1>h:\stringconverter\stringconverter\strsplit.h(49): warning C4018: “<”: 有符号/无符号不匹配
+     1>StringConverter.cpp(93): warning C4018: “<”: 有符号/无符号不匹配
+     1>StringConverter.cpp(113): warning C4018: “<”: 有符号/无符号不匹配
+     1>StringConverter.cpp(141): warning C4018: “<”: 有符号/无符号不匹配
+     1>StringConverter.cpp(173): warning C4018: “<”: 有符号/无符号不匹配
+     1>StringConverter.cpp(483): warning C4800: “void *”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>StringConverter.cpp(774): warning C4018: “<”: 有符号/无符号不匹配
+     1>StringConverter.cpp(28): warning C4018: “<”: 有符号/无符号不匹配
+         StringConverter.cpp(155): note: 参见对正在编译的函数 模板 实例化“bool arrEquals<FunctionPointer>(std::vector<FunctionPointer,std::allocator<_Ty>> &,std::vector<_Ty,std::allocator<_Ty>> &)”的引用
+                 with
+                 [
+                     _Ty=FunctionPointer
+                 ]
+     1>StringConverter.cpp(18): warning C4018: “<”: 有符号/无符号不匹配
+         StringConverter.cpp(311): note: 参见对正在编译的函数 模板 实例化“int getIndex<FunctionPointer>(std::vector<FunctionPointer,std::allocator<_Ty>>,T)”的引用
+                 with
+                 [
+                     _Ty=FunctionPointer,
+                     T=FunctionPointer
+                 ]
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\StringConverter\Release\StringConverter.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Include\Manifest\dpiaware.manifest" /Debug /PDB:"H:\StringConverter\Release\StringConverter.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\StringConverter\Release\StringConverter.lib" /MACHINE:X86 /SAFESEH Release\stdafx.obj
+         Release\StringConverter.obj
+         正在生成代码
+         All 1635 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+         已完成代码的生成
+         StringConverter.vcxproj -> H:\StringConverter\Release\StringConverter.exe
+     1>已完成生成项目“H:\StringConverter\StringConverter\StringConverter.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:01:09.93
