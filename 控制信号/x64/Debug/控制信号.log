@@ -1,0 +1,16 @@
+﻿  stdafx.cpp
+  控制信号.cpp
+c:\users\scrooge\desktop\控制信号\控制信号\控制信号.cpp(375): warning C4244: “参数”: 从“long”转换到“const _Ty”，可能丢失数据
+          with
+          [
+              _Ty=short
+          ]
+c:\users\scrooge\desktop\控制信号\控制信号\控制信号.cpp(383): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\scrooge\desktop\控制信号\控制信号\控制信号.cpp(675): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
+c:\users\scrooge\desktop\控制信号\控制信号\控制信号.cpp(676): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
+c:\users\scrooge\desktop\控制信号\控制信号\控制信号.cpp(680): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+c:\users\scrooge\desktop\控制信号\控制信号\控制信号.cpp(697): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\scrooge\desktop\控制信号\控制信号\控制信号.cpp(702): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\scrooge\desktop\控制信号\控制信号\控制信号.cpp(253): warning C4715: “getNameOfBasicFunction”: 不是所有的控件路径都返回值
+c:\users\scrooge\desktop\控制信号\控制信号\控制信号.cpp(553): warning C4715: “Sentence::execute”: 不是所有的控件路径都返回值
+  控制信号.vcxproj -> C:\Users\Scrooge\Desktop\控制信号\x64\Debug\控制信号.exe
